@@ -35,7 +35,7 @@ describe('the-sign-ctrl', () => {
 
     await ctrl.assertSigned()
 
-    ctrl.assertPassword('xxx')
+    await ctrl.assertPassword('xxx')
 
     ok(await ctrl.getSigned())
     await ctrl.signout()
