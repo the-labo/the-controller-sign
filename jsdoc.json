@@ -45,6 +45,14 @@
               "default": "",
               "optional": "",
               "nullable": ""
+            },
+            {
+              "name": "otherAttributes",
+              "type": "Object",
+              "description": "Other attributes",
+              "default": "",
+              "optional": "",
+              "nullable": ""
             }
           ],
           "examples": [],

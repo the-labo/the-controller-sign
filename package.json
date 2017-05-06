@@ -1,6 +1,6 @@
 {
   "name": "the-controller-sign",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Sign controller for the-server",
   "main": "lib",
   "browser": "shim",
