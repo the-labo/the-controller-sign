@@ -104,6 +104,7 @@ API Guide
 -----
 
 + [the-controller-sign@1.0.0](./doc/api/api.md)
+  + [create(args)](./doc/api/api.md#the-controller-sign-function-create)
 
 
 <!-- Section from "doc/guides/10.API Guide.md.hbs" End -->

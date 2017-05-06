@@ -6,6 +6,7 @@ Sign controller for the-server
   + [create(args)](#the-controller-sign-function-create)
 + [`TheSignCtrl`](#the-controller-sign-classes) Class
   + [new TheSignCtrl()](#the-controller-sign-classes-the-sign-ctrl-constructor)
+  + [ctrl.signup(name, password, options)](#the-controller-sign-classes-the-sign-ctrl-signup)
 
 ## Functions
 
@@ -39,6 +40,19 @@ Sign controller for the-server
 
 Constructor of TheSignCtrl class
 
+
+
+<a class='md-heading-link' name="the-controller-sign-classes-the-sign-ctrl-signup" ></a>
+
+### ctrl.signup(name, password, options) -> `Promise.<*>`
+
+Sign up
+
+| Param | Type | Description |
+| ----- | --- | -------- |
+| name |  |  |
+| password |  |  |
+| options |  |  |
 
 
 

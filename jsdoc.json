@@ -24,32 +24,81 @@
           "parameters": [
             {
               "name": "name",
-              "type": "",
-              "description": "",
+              "type": "string",
+              "description": "Name to identify user",
               "default": "",
               "optional": "",
               "nullable": ""
             },
             {
               "name": "password",
-              "type": "",
-              "description": "",
+              "type": "string",
+              "description": "Password",
               "default": "",
               "optional": "",
               "nullable": ""
             },
             {
               "name": "options",
-              "type": "",
-              "description": "",
-              "default": "",
-              "optional": "",
+              "type": "Object",
+              "description": "Optional settings",
+              "default": "{}",
+              "optional": true,
               "nullable": ""
             }
           ],
           "examples": [],
           "returns": {
-            "type": "Promise.<*>",
+            "type": "Promise.<Object>",
+            "description": "User"
+          }
+        },
+        {
+          "name": "signin",
+          "access": "",
+          "virtual": false,
+          "description": "Signin",
+          "parameters": [
+            {
+              "name": "name",
+              "type": "string",
+              "description": "Name to identify user",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            },
+            {
+              "name": "password",
+              "type": "string",
+              "description": "Password",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            },
+            {
+              "name": "options",
+              "type": "Object",
+              "description": "Optional settings",
+              "default": "{}",
+              "optional": true,
+              "nullable": ""
+            }
+          ],
+          "examples": [],
+          "returns": {
+            "type": "Promise",
+            "description": ""
+          }
+        },
+        {
+          "name": "signout",
+          "access": "",
+          "virtual": false,
+          "description": "Signout",
+          "parameters": [],
+          "examples": [],
+          "returns": {
+            "type": "Promise",
             "description": ""
           }
         }
