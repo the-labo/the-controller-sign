@@ -1,0 +1,82 @@
+{
+  "classes": [
+    {
+      "name": "TheSignCtrl",
+      "description": "",
+      "extends": [
+        "TheCtrl"
+      ],
+      "access": "",
+      "virtual": false,
+      "fires": "",
+      "constructor": {
+        "name": "TheSignCtrl",
+        "description": "Sign controller for the-server",
+        "parameters": [],
+        "examples": []
+      },
+      "functions": [
+        {
+          "name": "signup",
+          "access": "",
+          "virtual": false,
+          "description": "Sign up",
+          "parameters": [
+            {
+              "name": "name",
+              "type": "",
+              "description": "",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            },
+            {
+              "name": "password",
+              "type": "",
+              "description": "",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            },
+            {
+              "name": "options",
+              "type": "",
+              "description": "",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            }
+          ],
+          "examples": [],
+          "returns": {
+            "type": "Promise.<*>",
+            "description": ""
+          }
+        }
+      ]
+    }
+  ],
+  "functions": [
+    {
+      "name": "create",
+      "access": "",
+      "virtual": false,
+      "description": "Create a TheSignCtrl instance",
+      "parameters": [
+        {
+          "name": "args",
+          "type": "*",
+          "description": "",
+          "default": "",
+          "optional": "",
+          "nullable": ""
+        }
+      ],
+      "examples": [],
+      "returns": {
+        "type": "TheSignCtrl",
+        "description": ""
+      }
+    }
+  ]
+}
