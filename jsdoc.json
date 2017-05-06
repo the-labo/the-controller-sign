@@ -1,4 +1,12 @@
 {
+  "namespaces": [
+    {
+      "name": "Errors",
+      "description": "",
+      "access": "",
+      "virtual": false
+    }
+  ],
   "classes": [
     {
       "name": "TheSignCtrl",
@@ -37,19 +45,11 @@
               "default": "",
               "optional": "",
               "nullable": ""
-            },
-            {
-              "name": "options",
-              "type": "Object",
-              "description": "Optional settings",
-              "default": "{}",
-              "optional": true,
-              "nullable": ""
             }
           ],
           "examples": [],
           "returns": {
-            "type": "Promise.<Object>",
+            "type": "Promise.<UserEntity>",
             "description": "User"
           }
         },
@@ -86,7 +86,7 @@
           ],
           "examples": [],
           "returns": {
-            "type": "Promise",
+            "type": "Promise.<UserEntity>",
             "description": ""
           }
         },
@@ -98,7 +98,64 @@
           "parameters": [],
           "examples": [],
           "returns": {
+            "type": "Promise.<boolean>",
+            "description": ""
+          }
+        },
+        {
+          "name": "getSigned",
+          "access": "",
+          "virtual": false,
+          "description": "Get signed",
+          "parameters": [],
+          "examples": [],
+          "returns": {
+            "type": "Promise.<UserEntity>",
+            "description": ""
+          }
+        },
+        {
+          "name": "syncSigned",
+          "access": "",
+          "virtual": false,
+          "description": "Sync signed",
+          "parameters": [],
+          "examples": [],
+          "returns": {
+            "type": "Promise.<boolean>",
+            "description": ""
+          }
+        },
+        {
+          "name": "assertSigned",
+          "access": "",
+          "virtual": false,
+          "description": "Assert signed",
+          "parameters": [],
+          "examples": [],
+          "returns": {
             "type": "Promise",
+            "description": ""
+          }
+        },
+        {
+          "name": "assertPassword",
+          "access": "",
+          "virtual": false,
+          "description": "Assert password",
+          "parameters": [
+            {
+              "name": "password",
+              "type": "",
+              "description": "",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            }
+          ],
+          "examples": [],
+          "returns": {
+            "type": "Promise.<void>",
             "description": ""
           }
         }

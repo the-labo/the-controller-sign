@@ -5,7 +5,9 @@
 'use strict'
 
 const TheSignCtrl = require('../lib/TheSignCtrl')
-const { ok, equal } = require('assert')
+const { ok, equal, throws, doesNotThrow } = require('assert')
+const theDb = require('the-db')
+const { TheUserResource } = require('the-resource-user')
 
 describe('the-sign-ctrl', () => {
   before(() => {
@@ -14,9 +16,30 @@ describe('the-sign-ctrl', () => {
   after(() => {
   })
 
-  it('Do test', () => {
-    let ctrl = new TheSignCtrl()
+  it('Do test', async () => {
+    let db = theDb({ dialect: 'memory' })
+
+    db.load(TheUserResource, 'User')
+    db.load(TheUserResource.Sign, 'UserSign')
+
+    let ctrl = new TheSignCtrl({
+      app: { db },
+      session: {}
+    })
     ok(ctrl)
+
+    equal((await ctrl.assertSigned().catch((e) => e)).name, 'UnauthorizedError')
+    await ctrl.signup('foobar', 'xxx')
+    let signed = await ctrl.signin('foobar', 'xxx')
+    equal(signed.name, 'foobar')
+
+    await ctrl.assertSigned()
+
+    ctrl.assertPassword('xxx')
+
+    ok(await ctrl.getSigned())
+    await ctrl.signout()
+    ok(!(await ctrl.getSigned()))
   })
 })
 
