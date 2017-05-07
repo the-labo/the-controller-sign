@@ -1,4 +1,4 @@
-# the-controller-sign@1.0.2
+# the-controller-sign@1.0.3
 
 Sign controller for the-server
 
@@ -6,7 +6,7 @@ Sign controller for the-server
   + [create(args)](#the-controller-sign-function-create)
 + [`TheSignCtrl`](#the-controller-sign-classes) Class
   + [new TheSignCtrl()](#the-controller-sign-classes-the-sign-ctrl-constructor)
-  + [ctrl.signup(name, password)](#the-controller-sign-classes-the-sign-ctrl-signup)
+  + [ctrl.signup(name, password, otherAttributes)](#the-controller-sign-classes-the-sign-ctrl-signup)
   + [ctrl.signin(name, password, options)](#the-controller-sign-classes-the-sign-ctrl-signin)
   + [ctrl.signout()](#the-controller-sign-classes-the-sign-ctrl-signout)
   + [ctrl.getSigned()](#the-controller-sign-classes-the-sign-ctrl-getSigned)
@@ -50,7 +50,7 @@ Constructor of TheSignCtrl class
 
 <a class='md-heading-link' name="the-controller-sign-classes-the-sign-ctrl-signup" ></a>
 
-### ctrl.signup(name, password) -> `Promise.<UserEntity>`
+### ctrl.signup(name, password, otherAttributes) -> `Promise.<UserEntity>`
 
 Sign up
 
@@ -58,6 +58,7 @@ Sign up
 | ----- | --- | -------- |
 | name | string | Name to identify user |
 | password | string | Password |
+| otherAttributes | Object | Other attributes |
 
 
 <a class='md-heading-link' name="the-controller-sign-classes-the-sign-ctrl-signin" ></a>
