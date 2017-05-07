@@ -1,9 +1,10 @@
-# the-controller-sign@1.1.0
+# the-controller-sign@1.1.1
 
 Sign controller for the-server
 
 + Functions
   + [create(args)](#the-controller-sign-function-create)
+  + [mixSignCheck(BaseClass, options)](#the-controller-sign-function-mix-sign-check)
 + [`TheSignCtrl`](#the-controller-sign-classes) Class
   + [new TheSignCtrl()](#the-controller-sign-classes-the-sign-ctrl-constructor)
   + [ctrl.signup(name, password, otherAttributes)](#the-controller-sign-classes-the-sign-ctrl-signup)
@@ -25,6 +26,18 @@ Create a TheSignCtrl instance
 | Param | Type | Description |
 | ----- | --- | -------- |
 | args | * |  |
+
+<a class='md-heading-link' name="the-controller-sign-function-mix-sign-check" ></a>
+
+### mixSignCheck(BaseClass, options) -> `function`
+
+Mix up controller class with sign check feature
+
+| Param | Type | Description |
+| ----- | --- | -------- |
+| BaseClass | function |  |
+| options | Object | Optional settings |
+| options.only | Array.&lt;string&gt; | Action names to apply. |
 
 
 

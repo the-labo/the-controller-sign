@@ -102,7 +102,7 @@ tryExample().catch((err) => console.error(err))
 API Guide
 -----
 
-+ [the-controller-sign@1.1.0](./doc/api/api.md)
++ [the-controller-sign@1.1.1](./doc/api/api.md)
   + [create(args)](./doc/api/api.md#the-controller-sign-function-create)
 
 
