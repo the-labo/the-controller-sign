@@ -30,8 +30,8 @@ describe('the-sign-ctrl', () => {
 
     equal((await ctrl.assertSigned().catch((e) => e)).name, 'UnauthorizedError')
     await ctrl.signup('foobar', 'xxx')
-    let signed = await ctrl.signin('foobar', 'xxx')
-    equal(signed.name, 'foobar')
+    let user = await ctrl.signin('foobar', 'xxx')
+    equal(user.name, 'foobar')
 
     await ctrl.assertSigned()
 
