@@ -1,4 +1,4 @@
-# the-controller-sign@1.1.4
+# the-controller-sign@1.2.0
 
 Sign controller for the-server
 
