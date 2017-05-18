@@ -1,5 +1,129 @@
 {
+  "functions": [
+    {
+      "name": "create",
+      "access": "",
+      "virtual": false,
+      "description": "Create a TheSignCtrl instance",
+      "parameters": [
+        {
+          "name": "args",
+          "type": "*",
+          "description": "",
+          "default": "",
+          "optional": "",
+          "nullable": ""
+        }
+      ],
+      "examples": [],
+      "returns": {
+        "type": "TheSignCtrl",
+        "description": ""
+      }
+    },
+    {
+      "name": "mixSignCheck",
+      "access": "",
+      "virtual": false,
+      "description": "Mix up controller class with sign check feature",
+      "parameters": [
+        {
+          "name": "BaseClass",
+          "type": "function",
+          "description": "",
+          "default": "",
+          "optional": "",
+          "nullable": ""
+        },
+        {
+          "name": "options",
+          "type": "Object",
+          "description": "Optional settings",
+          "default": "{}",
+          "optional": true,
+          "nullable": ""
+        },
+        {
+          "name": "options.only",
+          "type": "Array.<string>",
+          "description": "Action names to apply.",
+          "default": null,
+          "optional": true,
+          "nullable": ""
+        }
+      ],
+      "examples": [],
+      "returns": {
+        "type": "function",
+        "description": "Mixed class"
+      }
+    },
+    {
+      "name": "create",
+      "access": "",
+      "virtual": false,
+      "description": "Create a TheSignCtrl instance",
+      "parameters": [
+        {
+          "name": "args",
+          "type": "*",
+          "description": "",
+          "default": "",
+          "optional": "",
+          "nullable": ""
+        }
+      ],
+      "examples": [],
+      "returns": {
+        "type": "TheSignCtrl",
+        "description": ""
+      }
+    },
+    {
+      "name": "mixSignCheck",
+      "access": "",
+      "virtual": false,
+      "description": "Mix up controller class with sign check feature",
+      "parameters": [
+        {
+          "name": "BaseClass",
+          "type": "function",
+          "description": "",
+          "default": "",
+          "optional": "",
+          "nullable": ""
+        },
+        {
+          "name": "options",
+          "type": "Object",
+          "description": "Optional settings",
+          "default": "{}",
+          "optional": true,
+          "nullable": ""
+        },
+        {
+          "name": "options.only",
+          "type": "Array.<string>",
+          "description": "Action names to apply.",
+          "default": null,
+          "optional": true,
+          "nullable": ""
+        }
+      ],
+      "examples": [],
+      "returns": {
+        "type": "function",
+        "description": "Mixed class"
+      }
+    }
+  ],
   "namespaces": [
+    {
+      "name": "Errors",
+      "description": "",
+      "access": "",
+      "virtual": false
+    },
     {
       "name": "Errors",
       "description": "",
@@ -166,68 +290,455 @@
             "type": "Promise.<void>",
             "description": ""
           }
+        },
+        {
+          "name": "signup",
+          "access": "",
+          "virtual": false,
+          "description": "Sign up",
+          "parameters": [
+            {
+              "name": "name",
+              "type": "string",
+              "description": "Name to identify user",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            },
+            {
+              "name": "password",
+              "type": "string",
+              "description": "Password",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            },
+            {
+              "name": "otherAttributes",
+              "type": "Object",
+              "description": "Other attributes",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            }
+          ],
+          "examples": [],
+          "returns": {
+            "type": "Promise.<UserEntity>",
+            "description": "User"
+          }
+        },
+        {
+          "name": "signin",
+          "access": "",
+          "virtual": false,
+          "description": "Signin",
+          "parameters": [
+            {
+              "name": "name",
+              "type": "string",
+              "description": "Name to identify user",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            },
+            {
+              "name": "password",
+              "type": "string",
+              "description": "Password",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            },
+            {
+              "name": "options",
+              "type": "Object",
+              "description": "Optional settings",
+              "default": "{}",
+              "optional": true,
+              "nullable": ""
+            }
+          ],
+          "examples": [],
+          "returns": {
+            "type": "Promise.<UserEntity>",
+            "description": ""
+          }
+        },
+        {
+          "name": "signout",
+          "access": "",
+          "virtual": false,
+          "description": "Signout",
+          "parameters": [],
+          "examples": [],
+          "returns": {
+            "type": "Promise.<boolean>",
+            "description": ""
+          }
+        },
+        {
+          "name": "getSigned",
+          "access": "",
+          "virtual": false,
+          "description": "Get signed",
+          "parameters": [],
+          "examples": [],
+          "returns": {
+            "type": "Promise.<UserEntity>",
+            "description": ""
+          }
+        },
+        {
+          "name": "syncSigned",
+          "access": "",
+          "virtual": false,
+          "description": "Sync signed",
+          "parameters": [],
+          "examples": [],
+          "returns": {
+            "type": "Promise.<boolean>",
+            "description": ""
+          }
+        },
+        {
+          "name": "assertSigned",
+          "access": "",
+          "virtual": false,
+          "description": "Assert signed",
+          "parameters": [],
+          "examples": [],
+          "returns": {
+            "type": "Promise",
+            "description": ""
+          }
+        },
+        {
+          "name": "assertPassword",
+          "access": "",
+          "virtual": false,
+          "description": "Assert password",
+          "parameters": [
+            {
+              "name": "password",
+              "type": "",
+              "description": "",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            }
+          ],
+          "examples": [],
+          "returns": {
+            "type": "Promise.<void>",
+            "description": ""
+          }
         }
       ]
-    }
-  ],
-  "functions": [
-    {
-      "name": "create",
-      "access": "",
-      "virtual": false,
-      "description": "Create a TheSignCtrl instance",
-      "parameters": [
-        {
-          "name": "args",
-          "type": "*",
-          "description": "",
-          "default": "",
-          "optional": "",
-          "nullable": ""
-        }
-      ],
-      "examples": [],
-      "returns": {
-        "type": "TheSignCtrl",
-        "description": ""
-      }
     },
     {
-      "name": "mixSignCheck",
+      "name": "TheSignCtrl",
+      "description": "",
+      "extends": [
+        "TheCtrl"
+      ],
       "access": "",
       "virtual": false,
-      "description": "Mix up controller class with sign check feature",
-      "parameters": [
+      "fires": "",
+      "constructor": {
+        "name": "TheSignCtrl",
+        "description": "Sign controller for the-server",
+        "parameters": [],
+        "examples": []
+      },
+      "functions": [
         {
-          "name": "BaseClass",
-          "type": "function",
-          "description": "",
-          "default": "",
-          "optional": "",
-          "nullable": ""
+          "name": "signup",
+          "access": "",
+          "virtual": false,
+          "description": "Sign up",
+          "parameters": [
+            {
+              "name": "name",
+              "type": "string",
+              "description": "Name to identify user",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            },
+            {
+              "name": "password",
+              "type": "string",
+              "description": "Password",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            },
+            {
+              "name": "otherAttributes",
+              "type": "Object",
+              "description": "Other attributes",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            }
+          ],
+          "examples": [],
+          "returns": {
+            "type": "Promise.<UserEntity>",
+            "description": "User"
+          }
         },
         {
-          "name": "options",
-          "type": "Object",
-          "description": "Optional settings",
-          "default": "{}",
-          "optional": true,
-          "nullable": ""
+          "name": "signin",
+          "access": "",
+          "virtual": false,
+          "description": "Signin",
+          "parameters": [
+            {
+              "name": "name",
+              "type": "string",
+              "description": "Name to identify user",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            },
+            {
+              "name": "password",
+              "type": "string",
+              "description": "Password",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            },
+            {
+              "name": "options",
+              "type": "Object",
+              "description": "Optional settings",
+              "default": "{}",
+              "optional": true,
+              "nullable": ""
+            }
+          ],
+          "examples": [],
+          "returns": {
+            "type": "Promise.<UserEntity>",
+            "description": ""
+          }
         },
         {
-          "name": "options.only",
-          "type": "Array.<string>",
-          "description": "Action names to apply.",
-          "default": null,
-          "optional": true,
-          "nullable": ""
+          "name": "signout",
+          "access": "",
+          "virtual": false,
+          "description": "Signout",
+          "parameters": [],
+          "examples": [],
+          "returns": {
+            "type": "Promise.<boolean>",
+            "description": ""
+          }
+        },
+        {
+          "name": "getSigned",
+          "access": "",
+          "virtual": false,
+          "description": "Get signed",
+          "parameters": [],
+          "examples": [],
+          "returns": {
+            "type": "Promise.<UserEntity>",
+            "description": ""
+          }
+        },
+        {
+          "name": "syncSigned",
+          "access": "",
+          "virtual": false,
+          "description": "Sync signed",
+          "parameters": [],
+          "examples": [],
+          "returns": {
+            "type": "Promise.<boolean>",
+            "description": ""
+          }
+        },
+        {
+          "name": "assertSigned",
+          "access": "",
+          "virtual": false,
+          "description": "Assert signed",
+          "parameters": [],
+          "examples": [],
+          "returns": {
+            "type": "Promise",
+            "description": ""
+          }
+        },
+        {
+          "name": "assertPassword",
+          "access": "",
+          "virtual": false,
+          "description": "Assert password",
+          "parameters": [
+            {
+              "name": "password",
+              "type": "",
+              "description": "",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            }
+          ],
+          "examples": [],
+          "returns": {
+            "type": "Promise.<void>",
+            "description": ""
+          }
+        },
+        {
+          "name": "signup",
+          "access": "",
+          "virtual": false,
+          "description": "Sign up",
+          "parameters": [
+            {
+              "name": "name",
+              "type": "string",
+              "description": "Name to identify user",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            },
+            {
+              "name": "password",
+              "type": "string",
+              "description": "Password",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            },
+            {
+              "name": "otherAttributes",
+              "type": "Object",
+              "description": "Other attributes",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            }
+          ],
+          "examples": [],
+          "returns": {
+            "type": "Promise.<UserEntity>",
+            "description": "User"
+          }
+        },
+        {
+          "name": "signin",
+          "access": "",
+          "virtual": false,
+          "description": "Signin",
+          "parameters": [
+            {
+              "name": "name",
+              "type": "string",
+              "description": "Name to identify user",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            },
+            {
+              "name": "password",
+              "type": "string",
+              "description": "Password",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            },
+            {
+              "name": "options",
+              "type": "Object",
+              "description": "Optional settings",
+              "default": "{}",
+              "optional": true,
+              "nullable": ""
+            }
+          ],
+          "examples": [],
+          "returns": {
+            "type": "Promise.<UserEntity>",
+            "description": ""
+          }
+        },
+        {
+          "name": "signout",
+          "access": "",
+          "virtual": false,
+          "description": "Signout",
+          "parameters": [],
+          "examples": [],
+          "returns": {
+            "type": "Promise.<boolean>",
+            "description": ""
+          }
+        },
+        {
+          "name": "getSigned",
+          "access": "",
+          "virtual": false,
+          "description": "Get signed",
+          "parameters": [],
+          "examples": [],
+          "returns": {
+            "type": "Promise.<UserEntity>",
+            "description": ""
+          }
+        },
+        {
+          "name": "syncSigned",
+          "access": "",
+          "virtual": false,
+          "description": "Sync signed",
+          "parameters": [],
+          "examples": [],
+          "returns": {
+            "type": "Promise.<boolean>",
+            "description": ""
+          }
+        },
+        {
+          "name": "assertSigned",
+          "access": "",
+          "virtual": false,
+          "description": "Assert signed",
+          "parameters": [],
+          "examples": [],
+          "returns": {
+            "type": "Promise",
+            "description": ""
+          }
+        },
+        {
+          "name": "assertPassword",
+          "access": "",
+          "virtual": false,
+          "description": "Assert password",
+          "parameters": [
+            {
+              "name": "password",
+              "type": "",
+              "description": "",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            }
+          ],
+          "examples": [],
+          "returns": {
+            "type": "Promise.<void>",
+            "description": ""
+          }
         }
-      ],
-      "examples": [],
-      "returns": {
-        "type": "function",
-        "description": "Mixed class"
-      }
+      ]
     }
   ]
 }
