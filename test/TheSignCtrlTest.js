@@ -33,6 +33,9 @@ describe('the-sign-ctrl', () => {
     let user = await ctrl.signin('foobar', 'xxx')
     equal(user.name, 'foobar')
 
+    let signinFailError = await ctrl.signin('__', '__').catch((e) => e)
+    equal(signinFailError.name, 'SigninFailedError')
+
     await ctrl.assertSigned()
 
     await ctrl.assertPassword('xxx')
