@@ -235,6 +235,18 @@
           }
         },
         {
+          "name": "signdel",
+          "access": "",
+          "virtual": false,
+          "description": "Delete sign",
+          "parameters": [],
+          "examples": [],
+          "returns": {
+            "type": "Promise.<void>",
+            "description": ""
+          }
+        },
+        {
           "name": "getSigned",
           "access": "",
           "virtual": false,
@@ -374,6 +386,18 @@
           "examples": [],
           "returns": {
             "type": "Promise.<boolean>",
+            "description": ""
+          }
+        },
+        {
+          "name": "signdel",
+          "access": "",
+          "virtual": false,
+          "description": "Delete sign",
+          "parameters": [],
+          "examples": [],
+          "returns": {
+            "type": "Promise.<void>",
             "description": ""
           }
         },
@@ -539,6 +563,18 @@
           }
         },
         {
+          "name": "signdel",
+          "access": "",
+          "virtual": false,
+          "description": "Delete sign",
+          "parameters": [],
+          "examples": [],
+          "returns": {
+            "type": "Promise.<void>",
+            "description": ""
+          }
+        },
+        {
           "name": "getSigned",
           "access": "",
           "virtual": false,
@@ -678,6 +714,18 @@
           "examples": [],
           "returns": {
             "type": "Promise.<boolean>",
+            "description": ""
+          }
+        },
+        {
+          "name": "signdel",
+          "access": "",
+          "virtual": false,
+          "description": "Delete sign",
+          "parameters": [],
+          "examples": [],
+          "returns": {
+            "type": "Promise.<void>",
             "description": ""
           }
         },
