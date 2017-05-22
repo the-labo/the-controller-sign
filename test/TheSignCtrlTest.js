@@ -43,6 +43,9 @@ describe('the-sign-ctrl', () => {
     ok(await ctrl.getSigned())
     await ctrl.signout()
     ok(!(await ctrl.getSigned()))
+
+    await ctrl.signin('foobar', 'xxx')
+    await ctrl.signdel()
   })
 })
 
